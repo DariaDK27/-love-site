@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра 🐈</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a th:href="@{/}">Главная</a>
+    <a th:href="@{/story}">Наша история</a>
+    <a th:href="@{/game}">Игра</a>
+    <a th:href="@{/letter}">Письмо</a>
+</nav>
+
+<section class="game-section">
+    <h1>Лови сердечки! 🐈❤️</h1>
+    <p>Управление: стрелки ← → на клавиатуре</p>
+    <p>Счёт: <span id="score">0</span></p>
+
+    <canvas id="gameCanvas" width="500" height="400"></canvas>
+
+    <button id="startBtn" onclick="startGame()">Начать игру</button>
+</section>
+
+<script th:src="@{/js/game.js}"></script>
+
+</body>
+</html>

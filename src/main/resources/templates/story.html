@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Наша история 🎾</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a th:href="@{/}">Главная</a>
+    <a th:href="@{/story}">Наша история</a>
+    <a th:href="@{/game}">Игра</a>
+    <a th:href="@{/letter}">Письмо</a>
+</nav>
+
+<section class="story-section">
+    <h1>Как всё начиналось 🎾</h1>
+
+    <div class="story-card">
+        <p>14 февраля, в день, когда весь мир говорил о любви, мы встретились не на романтическом свидании,
+            а на теннисном турнире.</p>
+    </div>
+
+    <div class="story-card">
+        <p>Кто бы мог подумать, что подача в сетку (от Влада) станет началом чего-то большего...</p>
+    </div>
+</section>
+
+</body>
+</html>

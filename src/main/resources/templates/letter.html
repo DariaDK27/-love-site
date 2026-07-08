@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Письмо 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<nav class="navbar">
+    <a th:href="@{/}">Главная</a>
+    <a th:href="@{/story}">Наша история</a>
+    <a th:href="@{/game}">Игра</a>
+    <a th:href="@{/letter}">Письмо</a>
+</nav>
+
+<section class="letter-section">
+
+    <div id="envelope" class="envelope" onclick="openEnvelope()">
+        <p class="envelope-text">Нажми, чтобы открыть 💌</p>
+    </div>
+
+    <div id="letterText" class="letter-text hidden">
+        <p>Муся,</p>
+        <p>однажды теннисный корт подарил мне не просто ещё один турнир, а тебя.</p>
+        <p>Спасибо за каждый день рядом.</p>
+        <p>Твой мусёнок ❤️</p>
+    </div>
+
+</section>
+
+<script th:src="@{/js/letter.js}"></script>
+
+</body>
+</html>
